@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #7c105c, #d341ff);
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  h1, h2 {
+    text-align: center;
+    color:#3f0755
+  }
+  .search {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .search input {
+    width: 60%;
+    padding: 8px;
+  }
+  .search button {
+    padding: 8px 12px;
+    margin-left: 4px;
+  }
+  .add-contact form div {
+    margin-bottom: 12px;
+  }
+  .add-contact label {
+    display: inline-block;
+    width: 80px;
+  }
+  .add-contact input {
+    padding: 6px;
+    width: calc(100% - 100px);
+  }
+  .contacts-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .contacts-list th, .contacts-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  .contacts-list tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  .contacts-list button {
+    margin-right: 4px;
+    padding: 4px 8px;
+  }
+  .message {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+  }
+  
+
+  

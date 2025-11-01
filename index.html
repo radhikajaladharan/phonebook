@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phonebook App</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Phonebook</h1>
+
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Search by name or phone…" />
+      <button id="searchBtn">Search</button>
+      <button id="clearSearchBtn">Clear</button>
+    </div>
+
+    <div class="add-contact">
+      <h2>Add / Update Contact</h2>
+      <form id="contactForm">
+        <input type="hidden" id="contactId" value="" />
+        <div>
+          <label for="nameInput">Name:</label>
+          <input type="text" id="nameInput" required />
+        </div>
+        <div>
+          <label for="phoneInput">Phone:</label>
+          <input type="tel" id="phoneInput" required   pattern="[0-9]{10}"
+          title="Please enter exactly 10 digits" />
+        </div>
+        <div>
+          <button type="submit">Save Contact</button>
+          <button type="button" id="cancelUpdateBtn" style="display:none;">Cancel Update</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="contacts-list">
+      <h2>All Contacts</h2>
+      <table id="contactsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- dynamically filled -->
+        </tbody>
+      </table>
+    </div>
+
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
